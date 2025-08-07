@@ -2,8 +2,9 @@
 
 ## Development Approach
 1. Take each step granularly - complete one component or feature at a time
-2. Create a git commit after each completed step
-3. When encountering errors related to imports, libraries, or any other issues, ALWAYS search the web first before attempting fixes
+2. Update the implementation plan (_docs/development-docs/2-implementation_plan.md) after completing each step
+3. Create a git commit after each completed step
+4. When encountering errors related to imports, libraries, or any other issues, ALWAYS search the web first before attempting fixes
 
 ## Commit Strategy
 - Commit after each completed component
