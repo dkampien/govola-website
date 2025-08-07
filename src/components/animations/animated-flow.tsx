@@ -3,9 +3,7 @@
 import React from 'react'
 import { cn } from '@/lib/utils'
 
-export interface AnimatedFlowProps extends React.HTMLAttributes<HTMLDivElement> {}
-
-export function AnimatedFlow({ className, ...props }: AnimatedFlowProps) {
+export function AnimatedFlow({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div className={cn('relative w-full h-64 md:h-80 lg:h-96', className)} {...props}>
       <svg

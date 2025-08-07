@@ -1,15 +1,16 @@
 import * as React from 'react'
+import Link from 'next/link'
 import { cn } from '@/lib/utils'
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost'
   size?: 'sm' | 'md' | 'lg'
-  as?: React.ElementType
+  as?: 'button' | 'a'
   href?: string
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = 'primary', size = 'md', as: Component = 'button', href, ...props }, ref) => {
+  ({ className, variant = 'primary', size = 'md', as = 'button', href, children, ...props }, ref) => {
     const classes = cn(
       'inline-flex items-center justify-center font-medium transition-all duration-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed',
       {
@@ -26,16 +27,22 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       className
     )
 
-    if (Component === 'a' && href) {
-      return <a href={href} className={classes} {...props} />
+    if (as === 'a' && href) {
+      return (
+        <Link href={href} className={classes}>
+          {children}
+        </Link>
+      )
     }
 
     return (
-      <Component
+      <button
         className={classes}
         ref={ref}
         {...props}
-      />
+      >
+        {children}
+      </button>
     )
   }
 )
