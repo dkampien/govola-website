@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+/* Make sure Tailwind layers are loaded */
+@layer base, components, utilities;
+
+@theme {
+  --color-vola-blue: #4A90E2;
+  --color-vola-blue-light: #6BA3E7;
+  --color-vola-blue-dark: #357ABD;
+  --color-vola-yellow: #F7D917;
+  --color-vola-yellow-hover: #E5C700;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #09090b;
