@@ -11,9 +11,11 @@
 - Use clear, descriptive commit messages
 
 ## Error Resolution
+- ONLY use WebSearch when encountering actual errors or issues
 - First action on any error: WebSearch for the specific error message
 - Check official documentation via web search
 - Look for recent solutions and best practices
+- Do NOT search for general implementation approaches - just implement directly
 
 ## Testing
 - Run `npm run build` before committing to ensure no build errors
