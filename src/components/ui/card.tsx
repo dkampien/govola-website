@@ -2,7 +2,7 @@ import * as React from 'react'
 import { cn } from '@/lib/utils'
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant?: 'default' | 'bordered' | 'elevated'
+  variant?: 'default' | 'bordered' | 'elevated' | 'interactive'
 }
 
 const Card = React.forwardRef<HTMLDivElement, CardProps>(
@@ -11,11 +11,12 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
       <div
         ref={ref}
         className={cn(
-          'rounded-lg p-6',
+          'rounded-xl p-6 transition-all duration-200',
           {
-            'bg-white': variant === 'default',
-            'bg-white border border-gray-200': variant === 'bordered',
-            'bg-white shadow-lg': variant === 'elevated',
+            'bg-white border border-gray-200/60 shadow-sm': variant === 'default',
+            'bg-white border border-gray-200 shadow-sm hover:shadow-md': variant === 'bordered',
+            'bg-white shadow-lg hover:shadow-xl border border-gray-100': variant === 'elevated',
+            'bg-white border border-gray-200/60 shadow-sm hover:shadow-lg hover:-translate-y-1 cursor-pointer': variant === 'interactive',
           },
           className
         )}

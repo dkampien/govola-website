@@ -17,12 +17,12 @@ export function Navigation() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200/50">
       <Container>
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold gradient-vola-text">GoVola</span>
-            <span className="text-sm text-gray-600">Content Engine</span>
+            <span className="text-2xl font-bold bg-gradient-to-r from-vola-blue to-vola-blue-dark bg-clip-text text-transparent">GoVola</span>
+            <span className="text-sm text-gray-500 font-medium">Content Engine</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -30,7 +30,7 @@ export function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-600 hover:text-vola-blue transition-colors"
+                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
               >
                 {link.label}
               </Link>

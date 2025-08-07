@@ -63,21 +63,21 @@ export function CompanySection() {
           </div>
         </Card>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           {trustIndicators.map((indicator) => {
             const Icon = indicator.icon
             return (
-              <div key={indicator.label} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-vola-blue/10 mb-3">
-                  <Icon className="w-6 h-6 text-vola-blue" />
+              <div key={indicator.label} className="text-center group cursor-pointer">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-vola-blue/10 to-vola-blue/5 mb-4 transition-transform group-hover:scale-110">
+                  <Icon className="w-7 h-7 text-vola-blue" />
                 </div>
-                <div className="text-3xl font-bold text-gray-900 mb-1">
+                <div className="text-3xl font-bold bg-gradient-to-br from-gray-900 to-gray-700 bg-clip-text text-transparent mb-1">
                   {indicator.metric}
                 </div>
                 <div className="text-sm font-semibold text-gray-700 mb-1">
                   {indicator.label}
                 </div>
-                <div className="text-xs text-gray-600">
+                <div className="text-xs text-gray-500">
                   {indicator.description}
                 </div>
               </div>

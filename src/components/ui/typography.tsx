@@ -11,7 +11,7 @@ export const H1 = React.forwardRef<HTMLHeadingElement, TypographyProps>(
       <Component
         ref={ref}
         className={cn(
-          'text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900',
+          'text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight',
           className
         )}
         {...props}
@@ -27,7 +27,7 @@ export const H2 = React.forwardRef<HTMLHeadingElement, TypographyProps>(
       <Component
         ref={ref}
         className={cn(
-          'text-3xl md:text-4xl font-bold tracking-tight text-gray-900',
+          'text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-gray-900',
           className
         )}
         {...props}
@@ -43,7 +43,7 @@ export const H3 = React.forwardRef<HTMLHeadingElement, TypographyProps>(
       <Component
         ref={ref}
         className={cn(
-          'text-xl md:text-2xl font-semibold tracking-tight text-gray-900',
+          'text-lg md:text-xl lg:text-2xl font-semibold tracking-tight text-gray-900',
           className
         )}
         {...props}
@@ -59,7 +59,7 @@ export const P = React.forwardRef<HTMLParagraphElement, TypographyProps>(
       <Component
         ref={ref}
         className={cn(
-          'text-base md:text-lg text-gray-600 leading-relaxed',
+          'text-base text-gray-600 leading-7',
           className
         )}
         {...props}
@@ -75,7 +75,7 @@ export const Lead = React.forwardRef<HTMLParagraphElement, TypographyProps>(
       <Component
         ref={ref}
         className={cn(
-          'text-lg md:text-xl text-gray-700 leading-relaxed',
+          'text-lg md:text-xl text-gray-600 leading-relaxed',
           className
         )}
         {...props}

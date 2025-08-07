@@ -55,11 +55,11 @@ export function FeaturesSection() {
           return (
             <Card
               key={feature.title}
-              variant="bordered"
-              className="hover:shadow-lg transition-all hover:-translate-y-1"
+              variant="interactive"
+              className="group"
             >
               <div className="flex flex-col h-full">
-                <div className={`${feature.bgColor} rounded-lg p-3 mb-4 self-start`}>
+                <div className={`${feature.bgColor} rounded-xl p-3 mb-4 self-start transition-transform group-hover:scale-110`}>
                   <Icon className={`w-6 h-6 ${feature.color}`} />
                 </div>
                 

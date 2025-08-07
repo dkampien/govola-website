@@ -66,14 +66,14 @@ export function HowItWorksSection() {
                 </div>
               )}
               
-              <Card variant="bordered" className="text-center h-full hover:shadow-lg transition-shadow">
+              <Card variant="interactive" className="text-center h-full group">
                 <div className="flex flex-col items-center">
-                  <div className={`${step.bgColor} rounded-full p-4 mb-4`}>
+                  <div className={`${step.bgColor} rounded-full p-4 mb-4 transition-transform group-hover:scale-110`}>
                     <Icon className={`w-8 h-8 ${step.color}`} />
                   </div>
                   
-                  <div className="text-sm font-semibold text-gray-500 mb-2">
-                    STEP {step.number}: {step.title}
+                  <div className="text-xs font-bold text-gray-400 tracking-wider mb-2">
+                    STEP {step.number} • {step.title}
                   </div>
                   
                   <H3 className="mb-3 text-center">

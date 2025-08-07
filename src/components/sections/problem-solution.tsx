@@ -16,8 +16,8 @@ export function ProblemSolutionSection() {
 
       <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {/* Manual Way */}
-        <Card variant="bordered" className="relative">
-          <div className="absolute -top-3 -right-3 bg-red-100 text-red-600 rounded-full p-2">
+        <Card variant="default" className="relative border-red-200/50 bg-gradient-to-br from-red-50/30 to-white">
+          <div className="absolute -top-3 -right-3 bg-red-500 text-white rounded-full p-2 shadow-lg">
             <X size={20} />
           </div>
           <H3 className="mb-4 text-red-600">THE MANUAL WAY</H3>
@@ -46,8 +46,8 @@ export function ProblemSolutionSection() {
         </Card>
 
         {/* Automated Way */}
-        <Card variant="elevated" className="relative border-2 border-vola-blue">
-          <div className="absolute -top-3 -right-3 bg-green-100 text-green-600 rounded-full p-2">
+        <Card variant="elevated" className="relative border-2 border-vola-blue/30 bg-gradient-to-br from-vola-blue/5 to-white">
+          <div className="absolute -top-3 -right-3 bg-vola-blue text-white rounded-full p-2 shadow-lg">
             <Check size={20} />
           </div>
           <H3 className="mb-4 text-vola-blue">THE AUTOMATED WAY</H3>
