@@ -1,4 +1,4 @@
-import { HeroVideoSection } from "@/components/sections/hero-video-section";
+import { HeroShowcase } from "@/components/sections/hero-showcase";
 import { siteConfig } from "@/lib/config";
 import Link from "next/link";
 
@@ -40,7 +40,7 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-      <HeroVideoSection />
+      <HeroShowcase />
     </section>
   );
 }

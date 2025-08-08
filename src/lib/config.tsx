@@ -962,43 +962,43 @@ export const siteConfig = {
   faqSection: {
     title: "Frequently Asked Questions",
     description:
-      "Answers to common questions about SkyAgent and its features. If you have any other questions, please don't hesitate to contact us.",
+      "Everything you need to know about GoVola Content Engine and TikTok automation.",
     faQitems: [
       {
         id: 1,
-        question: "What is an AI Agent?",
+        question: "How does GoVola connect to my TikTok accounts?",
         answer:
-          "An AI Agent is an intelligent software program that can perform tasks autonomously, learn from interactions, and make decisions to help achieve specific goals. It combines artificial intelligence and machine learning to provide personalized assistance and automation.",
+          "GoVola uses TikTok's official Content Posting API. Simply authorize your accounts once, and you can manage all of them from a single dashboard. The connection is secure and compliant with TikTok's guidelines.",
       },
       {
         id: 2,
-        question: "How does SkyAgent work?",
+        question: "What kind of video content can GoVola create?",
         answer:
-          "SkyAgent works by analyzing your requirements, leveraging advanced AI algorithms to understand context, and executing tasks based on your instructions. It can integrate with your workflow, learn from feedback, and continuously improve its performance.",
+          "GoVola automatically generates video mixes from your uploaded content, combining different clips, text overlays, and trending audio to create multiple unique variations. Each video is optimized for TikTok's format and audience preferences.",
       },
       {
         id: 3,
-        question: "How secure is my data?",
+        question: "Can I post to multiple TikTok accounts at once?",
         answer:
-          "We implement enterprise-grade security measures including end-to-end encryption, secure data centers, and regular security audits. Your data is protected according to industry best practices and compliance standards.",
+          "Yes! Upload once and distribute to all your connected TikTok accounts with customized scheduling for each. You can manage different posting times, captions, and hashtags for each account.",
       },
       {
         id: 4,
-        question: "Can I integrate my existing tools?",
+        question: "How does the analytics tracking work?",
         answer:
-          "Yes, SkyAgent is designed to be highly compatible with popular tools and platforms. We offer APIs and pre-built integrations for seamless connection with your existing workflow tools and systems.",
+          "GoVola pulls performance data directly from TikTok's API, showing views, engagement, and growth trends for all videos posted through our platform. You'll see real-time metrics and actionable insights to improve your content strategy.",
       },
       {
         id: 5,
-        question: "Is there a free trial available?",
+        question: "Is this compliant with TikTok's terms of service?",
         answer:
-          "Yes, we offer a 14-day free trial that gives you full access to all features. No credit card is required to start your trial, and you can upgrade or cancel at any time.",
+          "Absolutely. We exclusively use TikTok's official API and follow all platform guidelines for automated content posting. GoVola is built to ensure your accounts remain safe and compliant.",
       },
       {
         id: 6,
-        question: "How does SkyAgent save me time?",
+        question: "How long does it take to generate a video?",
         answer:
-          "SkyAgent automates repetitive tasks, streamlines workflows, and provides quick solutions to common challenges. This automation and efficiency can save hours of manual work, allowing you to focus on more strategic activities.",
+          "Our AI creates video variations in under 60 seconds. You can then review, customize, and schedule them for optimal posting times. The entire process from upload to scheduled post takes just a few minutes.",
       },
     ],
   },
