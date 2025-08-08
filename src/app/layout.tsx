@@ -1,24 +1,31 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./global.css";
-import { Navigation } from "@/components/ui/navigation";
-import { Footer } from "@/components/ui/footer";
+import { Navbar } from "@/components/sections/navbar";
+import { ThemeProvider } from "@/components/theme-provider";
+import { siteConfig } from "@/lib/site";
+import type { Metadata, Viewport } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  variable: "--font-inter",
 });
 
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const viewport: Viewport = {
+  themeColor: "black",
+};
+
 export const metadata: Metadata = {
-  title: "GoVola Content Engine - Create Once. Distribute Everywhere.",
-  description: "Streamline your social media workflow with intelligent video generation and multi-platform distribution. From raw footage to published content in minutes.",
-  keywords: "TikTok automation, content distribution, video generation, social media management, Vola.ro",
-  authors: [{ name: "Vola.ro" }],
-  openGraph: {
-    title: "GoVola Content Engine",
-    description: "Automate your TikTok content strategy with intelligent video generation",
-    type: "website",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.name,
+    template: `%s - ${siteConfig.name}`,
   },
+  description: siteConfig.description,
 };
 
 export default function RootLayout({
@@ -27,13 +34,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
-        <Navigation />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+    <html lang="en" suppressHydrationWarning>
+      {/* <head>
+        <Script src="https://unpkg.com/react-scan/dist/auto.global.js" />
+      </head> */}
+
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans bg-background`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="max-w-7xl mx-auto border-x relative">
+            <div className="block w-px h-full border-l border-border absolute top-0 left-6 z-10"></div>
+            <div className="block w-px h-full border-r border-border absolute top-0 right-6 z-10"></div>
+            <Navbar />
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
