@@ -11,7 +11,7 @@ export function CTASection() {
       className="flex flex-col items-center justify-center w-full"
     >
       <div className="w-full">
-        <div className="h-[400px] md:h-[400px] overflow-hidden shadow-xl w-full border border-border rounded-xl bg-secondary relative z-20">
+        <div className="h-[400px] md:h-[400px] overflow-hidden shadow-xl w-full border border-border rounded-xl bg-gradient-to-br from-[#4A6DB5] via-[#5B8DEE] to-[#87CEEB] relative z-20">
           <Image
             src={ctaSection.backgroundImage}
             alt="Agent CTA Background"
@@ -26,7 +26,7 @@ export function CTASection() {
             <div className="absolute bottom-10 flex flex-col items-center justify-center gap-2">
               <Link
                 href={ctaSection.button.href}
-                className="bg-white text-black font-semibold text-sm h-10 w-fit px-4 rounded-full flex items-center justify-center shadow-md"
+                className="bg-[#ffc52a] text-black font-semibold text-sm h-10 w-fit px-4 rounded-full flex items-center justify-center shadow-md hover:bg-[#ffc52a]/90 transition-colors"
               >
                 {ctaSection.button.text}
               </Link>

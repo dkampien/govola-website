@@ -195,6 +195,7 @@ Company: "Vola Content Engine"
 Tagline: "Built by the Vola.ro team in Bucharest, Romania"
 Links: About · Privacy Policy · Terms & Conditions · Contact
 Copyright: "© 2025 Vola.ro. All rights reserved."
+Contact: "hello.govola.ro"
 
 ```
 

@@ -9,66 +9,35 @@ export function HeroShowcase() {
       icon: Upload,
       title: "Upload Content",
       description: "Add your videos & photos",
-      color: "text-blue-500",
-      bgColor: "bg-blue-500/10",
+      color: "text-[#4A6DB5]",
+      bgColor: "bg-[#4A6DB5]/10",
     },
     {
       icon: Sparkles,
       title: "AI Generation",
       description: "Create unique variations",
-      color: "text-purple-500",
-      bgColor: "bg-purple-500/10",
+      color: "text-[#5B8DEE]",
+      bgColor: "bg-[#5B8DEE]/10",
     },
     {
       icon: Share2,
       title: "Auto-Publish",
       description: "Post to TikTok accounts",
-      color: "text-green-500",
-      bgColor: "bg-green-500/10",
+      color: "text-[#87CEEB]",
+      bgColor: "bg-[#87CEEB]/10",
     },
     {
       icon: TrendingUp,
       title: "Track Growth",
       description: "Monitor performance",
-      color: "text-orange-500",
-      bgColor: "bg-orange-500/10",
+      color: "text-[#5B8DEE]",
+      bgColor: "bg-[#5B8DEE]/10",
     },
   ];
 
   return (
     <div className="relative px-6 mt-16 mb-20">
       <div className="max-w-6xl mx-auto">
-        {/* Trust Indicators */}
-        <div className="flex flex-wrap justify-center gap-6 mb-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-zinc-900 rounded-full border border-zinc-200 dark:border-zinc-800"
-          >
-            <span className="text-2xl">🏆</span>
-            <span className="text-sm font-medium">18+ Years Experience</span>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-zinc-900 rounded-full border border-zinc-200 dark:border-zinc-800"
-          >
-            <span className="text-2xl">🚀</span>
-            <span className="text-sm font-medium">1M+ Customers Served</span>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-zinc-900 rounded-full border border-zinc-200 dark:border-zinc-800"
-          >
-            <span className="text-2xl">✅</span>
-            <span className="text-sm font-medium">TikTok API Official Partner</span>
-          </motion.div>
-        </div>
-
         {/* Animated Workflow */}
         <div className="relative bg-gradient-to-br from-zinc-50 to-zinc-100 dark:from-zinc-900 dark:to-zinc-950 rounded-3xl p-8 md:p-12 border border-zinc-200 dark:border-zinc-800">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
