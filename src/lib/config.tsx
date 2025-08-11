@@ -1,9 +1,6 @@
-import { FirstBentoAnimation } from "@/components/first-bento-animation";
-import { FourthBentoAnimation } from "@/components/fourth-bento-animation";
-import { SecondBentoAnimation } from "@/components/second-bento-animation";
-import { ThirdBentoAnimation } from "@/components/third-bento-animation";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
 import { Globe } from "@/components/ui/globe";
+import { WireframeIllustration } from "@/components/ui/wireframe";
 import { cn } from "@/lib/utils";
 
 export const Highlight = ({
@@ -37,7 +34,6 @@ export const siteConfig = {
     "AI Content Creation",
     "Social Media Marketing",
     "Video Content",
-    "Content Scheduling",
   ],
   links: {
     email: "support@govola.com",
@@ -322,31 +318,44 @@ export const siteConfig = {
   bentoSection: {
     title: "Empower Your Content Creation with AI",
     description:
-      "Leverage GoVola&apos;s AI for real-time content generation, seamless TikTok integration, and actionable insights to boost your social media presence.",
+      "Leverage GoVola AI for real-time content generation, seamless TikTok integration, and actionable insights to boost your social media presence.",
     items: [
       {
         id: 1,
-        content: <FirstBentoAnimation />,
+        // content: <FirstBentoAnimation />,
+        content: (
+          <div className="w-full h-full">
+            <WireframeIllustration />
+          </div>
+        ),
         title: "Real-time Content Generation",
         description:
           "Experience instant content creation. Ask GoVola to generate trending video scripts, hashtags, and optimize your TikTok strategy.",
       },
       {
         id: 2,
-        content: <SecondBentoAnimation />,
+        // content: <SecondBentoAnimation />,
+        content: (
+          <div className="w-full h-full">
+            <WireframeIllustration />
+          </div>
+        ),
         title: "TikTok API Integration",
         description:
           "Connect directly to TikTok for seamless posting. Automate your content pipeline with native platform integration.",
       },
       {
         id: 3,
+        // content: (
+        //   <ThirdBentoAnimation
+        //     data={[20, 30, 25, 45, 40, 55, 75]}
+        //     toolTipValues={[1234, 1678, 2101, 2534, 2967, 3400, 3833, 4266, 4700, 5133]}
+        //   />
+        // ),
         content: (
-          <ThirdBentoAnimation
-            data={[20, 30, 25, 45, 40, 55, 75]}
-            toolTipValues={[
-              1234, 1678, 2101, 2534, 2967, 3400, 3833, 4266, 4700, 5133,
-            ]}
-          />
+          <div className="w-full h-full">
+            <WireframeIllustration />
+          </div>
         ),
         title: "Performance Analytics",
         description:
@@ -354,7 +363,12 @@ export const siteConfig = {
       },
       {
         id: 4,
-        content: <FourthBentoAnimation once={false} />,
+        // content: <FourthBentoAnimation once={false} />,
+        content: (
+          <div className="w-full h-full">
+            <WireframeIllustration />
+          </div>
+        ),
         title: "Content Automation",
         description:
           "Set it, forget it. GoVola handles content creation and posting schedules so you can focus on strategy and growth.",
