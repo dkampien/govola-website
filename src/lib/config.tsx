@@ -294,32 +294,28 @@ export const siteConfig = {
         title: "Describe Your Content Idea",
         content:
           "Simply describe your TikTok video concept—let GoVola capture your vision. Your content creation journey begins instantly.",
-        image:
-          "https://images.unsplash.com/photo-1720371300677-ba4838fa0678?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        // image removed to use placeholder
       },
       {
         id: 2,
         title: "AI Generates Your Video",
         content:
           "Our AI analyzes trending topics, creates engaging scripts, and generates compelling video content tailored for your audience.",
-        image:
-          "https://images.unsplash.com/photo-1686170287433-c95faf6d3608?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8fA%3D%3D",
+        // image removed to use placeholder
       },
       {
         id: 3,
         title: "Schedule and Publish",
         content:
           "Review, customize, and schedule your content for optimal posting times. Watch your engagement soar with data-driven timing.",
-        image:
-          "https://images.unsplash.com/photo-1720378042271-60aff1e1c538?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D",
+        // image removed to use placeholder
       },
       {
         id: 4,
         title: "Track Performance & Optimize",
         content:
           "Monitor your content performance with detailed analytics and let our AI learn from successful posts to improve future content.",
-        image:
-          "https://images.unsplash.com/photo-1666882990322-e7f3b8df4f75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
+        // image removed to use placeholder
       },
     ],
   },
